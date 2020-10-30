@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Total</title>
+</head>
+<body>
+    <p>Nhập một số bất ky: </p>
+    <input type="number" id="nhapso">
+    <button type="button" onclick="tinhtong()">Tính tổng</button>
+    <P id="hientong"></P>    
+</body>
+<script>
+function tinhtong(){
+   let num = Number(document.getElementById("nhapso").value)
+   let total = 0
+   for(i=0;i<=num;i+=1){
+       total = total + i
+       alert(total)
+     //  document.getElementById("hientong").innerText = total
+   }
+    
+}   
+</script>
+</html>
